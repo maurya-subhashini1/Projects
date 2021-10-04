@@ -1,0 +1,714 @@
+{
+    "course": {
+        "id": "153",
+        "name": "JS if-else ",
+        "logo": "http://navgurukul.org/img/sqlogo.jpg",
+        "notes": null,
+        "days_to_complete": null,
+        "short_description": "We will discuss about Conditional Statements.",
+        "type": "js",
+        "lang_available": [
+            "en"
+        ],
+        "exercises": [
+            {
+                "id": "3745",
+                "parent_exercise_id": null,
+                "course_id": "153",
+                "name": "Conditional statements",
+                "slug": "js-if-else__Introduction",
+                "sequence_num": 0,
+                "review_type": "manual",
+                "submission_type": null,
+                "github_link": "https://github.com/navgurukul/newton/tree/master/js-if-else/Introduction.md",
+                "solution": null,
+                "content": [
+                    {
+                        "type": "markdown",
+                        "value": "Think that we have decided if it rains tomorrow I will not go to play in the park, and if it does not rain then I will go to play in the park. How to write this in `code`.\n\n\n\n#### Consider the following example:\n\n\n\n"
+                    },
+                    {
+                        "type": "javascript",
+                        "value": {
+                            "code": "let condition = 'Raining';\nif(condition == 'Raining'){\n  console.log('I will not go to the park');\n    }    \nelse{\n  console.log('I will go to the park')\n    }",
+                            "testCases": []
+                        }
+                    },
+                    {
+                        "type": "markdown",
+                        "value": "### Explanation:\n\n\nIn this example, there are two `outputs` (play in the park, and not play in the park), which depends on a condition which is the rainfall.\n\n"
+                    }
+                ]
+            },
+            {
+                "id": "3746",
+                "parent_exercise_id": null,
+                "course_id": "153",
+                "name": "If statement",
+                "slug": "js-if-else__If-Statement",
+                "sequence_num": 100,
+                "review_type": "manual",
+                "submission_type": null,
+                "github_link": "https://github.com/navgurukul/newton/tree/master/js-if-else/If-Statement.md",
+                "solution": null,
+                "content": [
+                    {
+                        "type": "javascript",
+                        "value": {
+                            "code": "if (condition is true) {\n  statement is executed\n}",
+                            "testCases": []
+                        }
+                    },
+                    {
+                        "type": "markdown",
+                        "value": "If you want to run a piece of `code`, based on a certain condition, then you should use the if `statement`. The `key`word if tells JavaScript to `execute` the `code` in the curly braces under certain conditions, that defined in the parentheses (). \n\n\n\n### Note: These conditions are known as Boolean conditions and they are only be `true` or `false`. \n\n\n\nWhen the condition evaluates to `true`, the program `executes` the `statement` inside the curly braces. When the Boolean condition evaluates to `false`, the `statement` inside the curly braces will not `execute`.\n\n\n\nLet us see some more examples.\n\n\n\n### Example:\n\n\n\n"
+                    },
+                    {
+                        "type": "javascript",
+                        "value": {
+                            "code": "var a = 10;\nvar b = 12;\nif(b > a){\n  console.log( b,\" is greater than  \", a  );\n}\n// Output :- 12, is greater than, 10",
+                            "testCases": []
+                        }
+                    },
+                    {
+                        "type": "markdown",
+                        "value": "### Explanation: \n\n\n\nHere 12 is greater than 10. So, the console will show us the `output` as 12, is greater than, 10.\n\n"
+                    }
+                ]
+            },
+            {
+                "id": "3748",
+                "parent_exercise_id": null,
+                "course_id": "153",
+                "name": "Else statement",
+                "slug": "js-if-else__Else-Statement",
+                "sequence_num": 200,
+                "review_type": "manual",
+                "submission_type": null,
+                "github_link": "https://github.com/navgurukul/newton/tree/master/js-if-else/Else-Statement.md",
+                "solution": null,
+                "content": [
+                    {
+                        "type": "markdown",
+                        "value": "If any “ if ”  condition is `false` then an “else” `statement` comes into the picture.\n\n\n\n### Example:\n\n\n"
+                    },
+                    {
+                        "type": "javascript",
+                        "value": {
+                            "code": "var a = 10;\nvar b = 12;\nif(a > b){\nconsole.log(a,\" is greater than \",b);\n}\nelse {\nconsole.log(b,\" is greater than \" ,a);\n}\n\n// Output :- 12 is greater than 10\n",
+                            "testCases": []
+                        }
+                    },
+                    {
+                        "type": "markdown",
+                        "value": "### Explanation: \n\n\n\nIn this example a value is 10, and b value is 12, after that it comes to check condition a>b means 10>12 which is `false`. Because of condition is `false` it won't `execute` the `code` that is written isnde curly braces, it will goes to the next `statement` that is else. So, else `statement` will `execute` b,\" is greater than \" ,a means 12 is greater than 10.\n\n\n\n\n\n### Example: \n\n\n\nWrite a program to find the maximum between two numbers.\n\n\n\n"
+                    },
+                    {
+                        "type": "javascript",
+                        "value": {
+                            "code": "var num1= 10;\nvar num2 = 20;\n \nif(num1>num2){\n   connsole.log(\"num1 is greater than num2\");\n}\nelse{\n   console.log(\"num2 is greater than num1\");;\n}\n\n// output: \"num2 is greater than num1\"\n",
+                            "testCases": []
+                        }
+                    },
+                    {
+                        "type": "markdown",
+                        "value": "### Explanation:\n\n\n\nThe condition that we given num1> num2  which is `false` because num1 (10) which is not greater than num2(20). So, if condition is `false` it will go to `execute` else condition and print the num2 is greater than num1.\n\n"
+                    }
+                ]
+            },
+            {
+                "id": "3747",
+                "parent_exercise_id": null,
+                "course_id": "153",
+                "name": "Else if statement",
+                "slug": "js-if-else__Else-if-Statement",
+                "sequence_num": 300,
+                "review_type": "manual",
+                "submission_type": null,
+                "github_link": "https://github.com/navgurukul/newton/tree/master/js-if-else/Else-if-Statement.md",
+                "solution": null,
+                "content": [
+                    {
+                        "type": "markdown",
+                        "value": "### Example:\n\n\n"
+                    },
+                    {
+                        "type": "javascript",
+                        "value": {
+                            "code": "var course = \"Hindi\";\nif (course == \"English\"){\n    console.log(\"Tutorial content is there in English\");\n    }\nelse if (course == \"Hindi\"){\n    console.log(\"Tutorial content is there in Hindi\");\n    }\nelse {\n    console.log(\"I am not understanding of Language\");\n}\n\n// Output : Tutorial content is there in Hindi\n",
+                            "testCases": []
+                        }
+                    },
+                    {
+                        "type": "markdown",
+                        "value": "### Explanation:\n\n\n\nif the course is equal to English, `output` “Tutorial content is there in English”.else if the course is equal to Hindi, `output` “Tutorial content is there in Hindi”.if nothing of the above condition is `true`, then `output` “I am not understanding of Languaget”\n\n\n\n\nelse If condition specifies a new condition if the first condition will be  `false` then it checks other conditions. \n\n\n\n#### Note\n\n\n\nWhen we have many conditions to check and we want a condition to be `true` then we use an else-if `key`word.\n\n"
+                    }
+                ]
+            },
+            {
+                "id": "3755",
+                "parent_exercise_id": "3755",
+                "course_id": "153",
+                "name": "Question-1",
+                "slug": "js-if-else__Exercises-Console_Output/Question-1",
+                "sequence_num": 400,
+                "review_type": "manual",
+                "submission_type": null,
+                "github_link": "https://github.com/navgurukul/newton/tree/master/js-if-else/Exercises-Console_Output/Question-1.md",
+                "solution": null,
+                "content": [
+                    {
+                        "type": "markdown",
+                        "value": "Print  the student's names according to the day?\n\n\n\n"
+                    },
+                    {
+                        "type": "javascript",
+                        "value": {
+                            "code": "var day = \"TUeSday\".toLowerCase();\n\nif (day == \"monday\") {\n  console.log(\"Dhanwantari\\nSiddhi\\Kritika\\Salon\\nMayuri\\nGauri\");\n}\nelse if (day == \"tuesday\") {\n  console.log(\"Keemaya\\nRoshni\\nPooja\\Priyanka\\nnalini\\nManisha\");\n}\nelse if (day == \"wednesday\") {\n  console.log(\"Shrusti\\Karuna\\Parveen\\Sandhya\\nLeena\\nKarishma\");\n}\nelse if (day == \"thursday\") {\n  console.log(\"Nikita\\nMona\\nPriyanka\\Tejashree\\nLovely\\nMehzebin\");\n}\nelse if (day == \"friday\") {\n  console.log(\"Pihu\\Sejal\\nChaya\\Shrestha\\nMonali\\nAardhangya\");\n}\nelse if (day == \"saturday\") {\n  console.log(\"Gunjan\\nShweta\\nRani\\nIsha\\nKusu\\Madhu\\n\");\n}\nelse if (day == \"sunday\") {\n  console.log(\"Swati\\nKhusboo\\nidhi\\Preeti\\nDipti\\nAnamika\");\n}\nelse {\n  console.log(\"Please enter valid week day\")\n}\n",
+                            "testCases": []
+                        }
+                    },
+                    {
+                        "type": "solution",
+                        "value": {
+                            "code": "\nOutput:\nkeemaya\nroshni \npooja\npriyanka\nnalini\nManisha\n\n### Explanation:\n\ntoLowercase() function is used to convert any letters into small lowercase.\n \nThe day is tuesday and at first it will check for if condition when it fails, so it will check for another else if condition when it is true it will go to the body of that particular else if and executes the statements inside of it.\n\nBecause first else if correct and it enters into the body of else if and it console the given text to it. And it is comming one by one that is because of \\n, this will change to a new line.",
+                            "testCases": []
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "3757",
+                "parent_exercise_id": "3755",
+                "course_id": "153",
+                "name": "Question-2",
+                "slug": "js-if-else__Exercises-Console_Output/Question-2",
+                "sequence_num": 401,
+                "review_type": "manual",
+                "submission_type": null,
+                "github_link": "https://github.com/navgurukul/newton/tree/master/js-if-else/Exercises-Console_Output/Question-2.md",
+                "solution": null,
+                "content": [
+                    {
+                        "type": "markdown",
+                        "value": "What is the `output` of the following `code`?\n\n\n\n"
+                    },
+                    {
+                        "type": "javascript",
+                        "value": {
+                            "code": "var x = 10;\nvar y = 12\nvar z = 90\n \nif (x > y){\n  if (x < z){\n      x = y\n  }\n  else{\n      m = z\n  }\n}\nelse {\n  if(y > z){\n      m = y\n  }\n  else {\n      m = x\n  }\n   \n}\nconsole.log(m)\n ",
+                            "testCases": []
+                        }
+                    },
+                    {
+                        "type": "solution",
+                        "value": {
+                            "code": "10",
+                            "testCases": []
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "3758",
+                "parent_exercise_id": "3755",
+                "course_id": "153",
+                "name": "Question-3",
+                "slug": "js-if-else__Exercises-Console_Output/Question-3",
+                "sequence_num": 402,
+                "review_type": "manual",
+                "submission_type": null,
+                "github_link": "https://github.com/navgurukul/newton/tree/master/js-if-else/Exercises-Console_Output/Question-3.md",
+                "solution": null,
+                "content": [
+                    {
+                        "type": "markdown",
+                        "value": "What is the `output` of the following `code`?\n\n\n\n"
+                    },
+                    {
+                        "type": "javascript",
+                        "value": {
+                            "code": "var choice =\"overcast\";\nvar message =\"\" \nif (choice === 'sunny') {\n    message = 'It is nice and sunny outside today. \\nWear shorts! Go to the beach, or the park, and get an ice cream.'\n } else if (choice === 'rainy') {\n     message = 'Rain is falling outside; \\nTake a rain coat and an umbrella, and don\\'t stay out for too long.'\n } else if (choice === 'snowing') {\n     message = 'The snow is coming down — it is freezing! \\nBest to stay in with a cup of hot chocolate, or go build a snowman.'\n } else if (choice === 'overcast') {\n     message = 'It isn\\'t raining, but the sky is grey and gloomy; \\nit could turn any minute, so take a rain coat just in case.'\n } else {\n   message = 'Nothing'\n}\nconsole.log(message)\n\n",
+                            "testCases": []
+                        }
+                    },
+                    {
+                        "type": "solution",
+                        "value": {
+                            "code": "It isn't raining, but the sky is grey and gloomy; it could turn any minute, so take a rain coat just in case.",
+                            "testCases": []
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "3759",
+                "parent_exercise_id": "3755",
+                "course_id": "153",
+                "name": "Question-4",
+                "slug": "js-if-else__Exercises-Console_Output/Question-4",
+                "sequence_num": 403,
+                "review_type": "manual",
+                "submission_type": null,
+                "github_link": "https://github.com/navgurukul/newton/tree/master/js-if-else/Exercises-Console_Output/Question-4.md",
+                "solution": null,
+                "content": [
+                    {
+                        "type": "markdown",
+                        "value": "Please tell `output` on different value of time `variable` :\n\n\n\n"
+                    },
+                    {
+                        "type": "javascript",
+                        "value": {
+                            "code": "var time = 9;\nif (time >= 5 && time <= 6) {\n console.log(\"sleep well\");\n}\nelse if (time >= 6 && time <= 7) {\n console.log(\"Morning Exercise\");\n}\nelse if(time > 7 && time < 8.30){\n console.log(\"Break+Breakfast\");\n}\nelse if ( time > 8.30 && time < 12){\n console.log(\"Study\");\n}\n \n// Try for these time values and understand yourself \n// what is the output will come\n// time= 5\n// time=8\n// time=10",
+                            "testCases": []
+                        }
+                    },
+                    {
+                        "type": "solution",
+                        "value": {
+                            "code": "Study",
+                            "testCases": []
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "3806",
+                "parent_exercise_id": "3755",
+                "course_id": "153",
+                "name": "Question-5",
+                "slug": "js-if-else__Exercises-Console_Output/Question-5",
+                "sequence_num": 404,
+                "review_type": "manual",
+                "submission_type": null,
+                "github_link": "https://github.com/navgurukul/newton/tree/master/js-if-else/Exercises-Console_Output/Question-5.md",
+                "solution": null,
+                "content": [
+                    {
+                        "type": "markdown",
+                        "value": "In a `variable` named number, take the `input` from the user and convert it to int.\n\n\n\nIf this number is less than 10 then print **\"number is less than 10\"**. If it is greater than 10 and less than 20 then print **\"number is less than 20\"**. Else if it is greater than 20 then print \"**greater than 20\"**.\n\n\n\nFor knowing how to take inputs please go through this\n[page\n](https://www.merakilearn.org/course/153/exercise/3738)\n\n\n"
+                    },
+                    {
+                        "type": "javascript",
+                        "value": {
+                            "code": "// please write code here",
+                            "testCases": []
+                        }
+                    },
+                    {
+                        "type": "solution",
+                        "value": {
+                            "code": "let readlineSync = require(\"readline-sync\");\nvar number=readlineSync.questionInt(\"enter a number\");\nif (number<10){\n   console.log(\"num is less than 10\");\n}\nelse if(number>10 && number<20){\n   console.log(\"num is less than 20\");\n}\nelse{\n   console.log(\"greater than 20\");\n}",
+                            "testCases": []
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "3814",
+                "parent_exercise_id": "3755",
+                "course_id": "153",
+                "name": "Question-6",
+                "slug": "js-if-else__Exercises-Console_Output/Question-6",
+                "sequence_num": 405,
+                "review_type": "manual",
+                "submission_type": null,
+                "github_link": "https://github.com/navgurukul/newton/tree/master/js-if-else/Exercises-Console_Output/Question-6.md",
+                "solution": null,
+                "content": [
+                    {
+                        "type": "markdown",
+                        "value": "You have a `variable` called var num1 with the value as shown:\n\n\n\nvar num1 = 300 - 123\n\n\n\nTake one user `input` and check that number is equal or not.\n\n\n\nIf the new user `input` is equal to num1, console **\"Equal\"** else console  **\"Not equal\"**.\n\n\n\n"
+                    },
+                    {
+                        "type": "javascript",
+                        "value": {
+                            "code": "// please write code here",
+                            "testCases": []
+                        }
+                    },
+                    {
+                        "type": "solution",
+                        "value": {
+                            "code": "var num1 = 300 - 123;\nlet readlineSync = require(\"readline-sync\");\nvar num2=readlineSync.question(\"enter a number\");\nif(num1==num2){\n   console.log(\"equal hai\")\n}\nelse{\n   console.log(\"not equal\")\n}",
+                            "testCases": []
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "3811",
+                "parent_exercise_id": "3755",
+                "course_id": "153",
+                "name": "Question-7",
+                "slug": "js-if-else__Exercises-Console_Output/Question-7",
+                "sequence_num": 406,
+                "review_type": "manual",
+                "submission_type": null,
+                "github_link": "https://github.com/navgurukul/newton/tree/master/js-if-else/Exercises-Console_Output/Question-7.md",
+                "solution": null,
+                "content": [
+                    {
+                        "type": "markdown",
+                        "value": "You have a `variable` called number with the value as shown:\n\n\n\nvar number1 = 44 * 30\n\n\n\nCheck if this number1 is greater than or equal to number2. If the entered number2 is greater than or equal to number1, console  **\"number2 is greater than or equal\"** else console  **\"number2 is lesser\"**.\n\n\n\n"
+                    },
+                    {
+                        "type": "javascript",
+                        "value": {
+                            "code": "// please write code here",
+                            "testCases": []
+                        }
+                    },
+                    {
+                        "type": "solution",
+                        "value": {
+                            "code": "var number1 = 44 * 30;\nlet readlineSync = require(\"readline-sync\");\nvar number2=readlineSync.questionInt(\"enter a number\");\nif(number2>=number2){\n   console.log(\"number2 is greater than or equal\");\n}\nelse{\n   console.log(\"number2 is lesser\");\n}",
+                            "testCases": []
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "3812",
+                "parent_exercise_id": "3755",
+                "course_id": "153",
+                "name": "Question-8",
+                "slug": "js-if-else__Exercises-Console_Output/Question-8",
+                "sequence_num": 407,
+                "review_type": "manual",
+                "submission_type": null,
+                "github_link": "https://github.com/navgurukul/newton/tree/master/js-if-else/Exercises-Console_Output/Question-8.md",
+                "solution": null,
+                "content": [
+                    {
+                        "type": "markdown",
+                        "value": "If water in the filter is less than 1L then more water needs to be filled. If the water quantity is between 1L and 10L then there is no need to fill water. If water is more than 10L then the water will overflow. take user `input` in a `variable` named water .\n\n\n\n\n"
+                    },
+                    {
+                        "type": "javascript",
+                        "value": {
+                            "code": "// please write code here",
+                            "testCases": []
+                        }
+                    },
+                    {
+                        "type": "solution",
+                        "value": {
+                            "code": "let readlineSync = require(\"readline-sync\");\nvar water=readlineSync.questionInt(\"enter water level\");\nif (water<1){\n   console.log(\"more water needs to fill\");\n}\nelse if (water>=1 && water<=10){\n   console.log(\"no need to fill water\");\n}\nelse{\n   console.log(\"overflow\");\n}",
+                            "testCases": []
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "3807",
+                "parent_exercise_id": "3755",
+                "course_id": "153",
+                "name": "Question-9",
+                "slug": "js-if-else__Exercises-Console_Output/Question-9",
+                "sequence_num": 408,
+                "review_type": "manual",
+                "submission_type": null,
+                "github_link": "https://github.com/navgurukul/newton/tree/master/js-if-else/Exercises-Console_Output/Question-9.md",
+                "solution": null,
+                "content": [
+                    {
+                        "type": "markdown",
+                        "value": "- Take user `input` in a `variable` named varx.\n\n- Check if this number is divisible by 2.\n\n- Console  that number is divisible by 2 or not\n\n- If number is divisible by 2 console 2 se **“divisible hai”** else **“not divisible”**\n\n\n\n"
+                    },
+                    {
+                        "type": "javascript",
+                        "value": {
+                            "code": "// please write code here",
+                            "testCases": []
+                        }
+                    },
+                    {
+                        "type": "solution",
+                        "value": {
+                            "code": "let readlineSync = require(\"readline-sync\");\nvar varx=readlineSync.questionInt(\"enter a number\")\nif(varx%2===0){\n   console.log(\"divisible hai\")\n}\nelse{\n   console.log(\"not divisible\")\n}",
+                            "testCases": []
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "3808",
+                "parent_exercise_id": "3755",
+                "course_id": "153",
+                "name": "Question-10",
+                "slug": "js-if-else__Exercises-Console_Output/Question-10",
+                "sequence_num": 409,
+                "review_type": "manual",
+                "submission_type": null,
+                "github_link": "https://github.com/navgurukul/newton/tree/master/js-if-else/Exercises-Console_Output/Question-10.md",
+                "solution": null,
+                "content": [
+                    {
+                        "type": "markdown",
+                        "value": "- Take two numbers as `input` from the user in `variables` varx and vary.\n\n- Check whether varx is divisible by vary.\n\n- If yes, console  **Divisible** else console **Not Divisible**.\n\n\n\n"
+                    },
+                    {
+                        "type": "javascript",
+                        "value": {
+                            "code": "// please write code here",
+                            "testCases": []
+                        }
+                    },
+                    {
+                        "type": "solution",
+                        "value": {
+                            "code": "let readlineaSync = require(\"readline-sync\");\nvar varX=readlineaSync.questionInt(\"enter a number\");\nvar vary=readlineSync.questionInt(\"enter a number\");\nif(varX%vary===0){\n   console.log(\"Divisible\");\n}\nelse{\n   console.log(\"Not divisible\");\n}",
+                            "testCases": []
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "3809",
+                "parent_exercise_id": "3755",
+                "course_id": "153",
+                "name": "Question-11",
+                "slug": "js-if-else__Exercises-Console_Output/Question-11",
+                "sequence_num": 410,
+                "review_type": "manual",
+                "submission_type": null,
+                "github_link": "https://github.com/navgurukul/newton/tree/master/js-if-else/Exercises-Console_Output/Question-11.md",
+                "solution": null,
+                "content": [
+                    {
+                        "type": "markdown",
+                        "value": "Take two numbers as `input` from the user. Console  the number which is greater.\n\n\n\n"
+                    },
+                    {
+                        "type": "javascript",
+                        "value": {
+                            "code": "// please write code here",
+                            "testCases": []
+                        }
+                    },
+                    {
+                        "type": "solution",
+                        "value": {
+                            "code": "let readlineaSync = require(\"readline-sync\");\nvar number1=readlineaSync.questionInt(\"enter a number\");\nvar number2=readlineaSync.questionInt(\"enter a number\");\nif(number1>number2){\n   console.log(\"number1 is greater\");\n}\nelse{\n   console.log(\"number2 is greater\");\n}",
+                            "testCases": []
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "3813",
+                "parent_exercise_id": "3755",
+                "course_id": "153",
+                "name": "Question-12",
+                "slug": "js-if-else__Exercises-Console_Output/Question-12",
+                "sequence_num": 411,
+                "review_type": "manual",
+                "submission_type": null,
+                "github_link": "https://github.com/navgurukul/newton/tree/master/js-if-else/Exercises-Console_Output/Question-12.md",
+                "solution": null,
+                "content": [
+                    {
+                        "type": "markdown",
+                        "value": "Takes a number as user `input`. Check if this number is divisible by 5 and 15 both\n\n\n\n- If it is divisibe by both prints **\"Divisible by both\"**.\n\n- else prints **\"Not divisible by both\"**\n\n\n\n"
+                    },
+                    {
+                        "type": "javascript",
+                        "value": {
+                            "code": "// please write code here",
+                            "testCases": []
+                        }
+                    },
+                    {
+                        "type": "solution",
+                        "value": {
+                            "code": "let readlineaSync = require(\"readline-sync\");\nvar number=readlineaSync.questionInt(\"enter a number\");\nif(number%5===0 && number%15===0){\n   console.log(\"Divisible by both\");\n}\nelse{\n   console.log(\"Not divisible by both\");\n}",
+                            "testCases": []
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "3810",
+                "parent_exercise_id": "3755",
+                "course_id": "153",
+                "name": "Question-13",
+                "slug": "js-if-else__Exercises-Console_Output/Question-13",
+                "sequence_num": 412,
+                "review_type": "manual",
+                "submission_type": null,
+                "github_link": "https://github.com/navgurukul/newton/tree/master/js-if-else/Exercises-Console_Output/Question-13.md",
+                "solution": null,
+                "content": [
+                    {
+                        "type": "markdown",
+                        "value": "Consider the following rules:\n\n\n\nPeople **5 years and above** in age can go to school.\n\n\n\nPeople **18 years and above** in age can vote in elections.\n\n\n\nPeople **21 years and above** in age can drive a car.\n\n\n\nPeople **24 years and above** in age can marry.\n\n\n\nPeople **25 years and above** in age can legally drink.\n\n\n\ntakes the **age** of the user as `input`. console what all activities the user can do from the list above. \n\n\n\nFor example, if user enters **age as 20**, the `code` should console:\n\n\n\nYou can go to school\n\n\n\nYou can vote in elections\n\n\n\nIf user enters **age as 24**, the `code` will print:\n\n\n\nYou can go to school\n\n\n\nYou can vote in elections\n\n\n\nYou can drive a car\n\n\n\nYou can marry\n\n\n\n"
+                    },
+                    {
+                        "type": "javascript",
+                        "value": {
+                            "code": "// please write code here",
+                            "testCases": []
+                        }
+                    },
+                    {
+                        "type": "solution",
+                        "value": {
+                            "code": "let readlineaSync = require(\"readline-sync\");\nvar age=readlineaSync.questionInt(\"enter age\");\nif(age>=5){\n   console.log(\"You can go school\");\n}\nif(age>=18){\n   console.log(\"You can vote in elections.\");\n}\nif(age>=21){\n   console.log(\"You can drive a car\");\n} \nif(age>=24){\n   console.log(\"You can marry\");\n}\nif(age>=25){\n   console.log(\"You can drink\");\n}\n",
+                            "testCases": []
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "3756",
+                "parent_exercise_id": "3756",
+                "course_id": "153",
+                "name": "Question-1",
+                "slug": "js-if-else__Exercises-Debug/Question-1",
+                "sequence_num": 500,
+                "review_type": "manual",
+                "submission_type": null,
+                "github_link": "https://github.com/navgurukul/newton/tree/master/js-if-else/Exercises-Debug/Question-1.md",
+                "solution": null,
+                "content": [
+                    {
+                        "type": "markdown",
+                        "value": "`Output` Should be \"Both are same\". Debug the question as per `output`.\n\n\n\n"
+                    },
+                    {
+                        "type": "javascript",
+                        "value": {
+                            "code": "let isTrue = \"True\";\nif(isTrue){\n  console.log(\"Output should show\")\n}\nif(isTrue === \"False\"){\n  console.log(\"Both are same\")\n}\nelse {\n  console.log(\"Please run it. if all conditions false\")\n}",
+                            "testCases": []
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "3760",
+                "parent_exercise_id": "3756",
+                "course_id": "153",
+                "name": "Question-2",
+                "slug": "js-if-else__Exercises-Debug/Question-2",
+                "sequence_num": 501,
+                "review_type": "manual",
+                "submission_type": null,
+                "github_link": "https://github.com/navgurukul/newton/tree/master/js-if-else/Exercises-Debug/Question-2.md",
+                "solution": null,
+                "content": [
+                    {
+                        "type": "markdown",
+                        "value": "`code` the change like if I give number as 21, 21 is divisible by both 3 and 7 so it should give Chacolate as answer to me.\n\n\n\nsample `inputs` and `outputs`:\n\n\n\nfor 21 answer Chacolate\n\n\n\nfor 15 answer choco\n\n\n\nfor 14 answer late\n\n\n\nfor 13 answer Not divisible by 3 , 7\n\n\n\nDebug the `code` and try to get exact solutions with different `inputs`\n\n\n\n\n"
+                    },
+                    {
+                        "type": "javascript",
+                        "value": {
+                            "code": "var number = 12;\n \nif(Number%3 === 0){\n   console.log(\"choco\")\n}\nelif(number % 7){\n   console.log(\"late\")\n}\nelif(a%3==0 and a%7==0) {\n   console.log(\"Chocolate\")\n}\nelse {\n   console.log(\"Not divisible by 3 , 7\")\n}\n",
+                            "testCases": []
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "3738",
+                "parent_exercise_id": "3738",
+                "course_id": "153",
+                "name": "Project prereuisite",
+                "slug": "js-if-else__Project1/How-to-take-input",
+                "sequence_num": 600,
+                "review_type": "manual",
+                "submission_type": null,
+                "github_link": "https://github.com/navgurukul/newton/tree/master/js-if-else/Project1/How-to-take-input.md",
+                "solution": null,
+                "content": [
+                    {
+                        "type": "markdown",
+                        "value": "# Taking `Input`\n\n\n\nIn the world everyone has emotions and everyone will interact with each other. So in javascript also if we want to interact we can use different methods. One of them is readline-sync. \n\n\n\nTo download “readline-sync” in your laptop run this command line:\n\n\n\n> npm install readline-sync\nTo know more about “readline-sync” you can read this doc as well:\n\n\n    \n[Follow this link\n](https://launchschool.com/books/javascript/read/input_output)\n\n\n#### Note : \n\n\n\nBefore using “readline-sync” make sure that it is downloaded in your laptop then only you will be able to take the `input` from the user.\n\n\n\n### Example:\n\n\n\n"
+                    },
+                    {
+                        "type": "javascript",
+                        "value": {
+                            "code": "let readlineSync = require(\"readline-sync\");\nvar yourName= readlineSync.question(\"What is your name: \")\nconsole.log(yourName);",
+                            "testCases": []
+                        }
+                    },
+                    {
+                        "type": "markdown",
+                        "value": "### Explaination:\n\n\n\nreadlineSync we imported by installation using npm install readline-sync. In readlineSync we have so many functions one function is question by this you will take `input` whatever that you entered here it will come as a `string` only.\n\n\n\nIf you want to use only `Integer`, then the question will give but its type is `string` not a number that we want.\n\n\n\nFor that , we have questionInt..\n\n\n\n"
+                    },
+                    {
+                        "type": "javascript",
+                        "value": {
+                            "code": "let readlineSync = require(\"readline-sync\");\nvar age= readlineSync.questionInt(\"What is your age: \")\nconsole.log(age);",
+                            "testCases": []
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "3743",
+                "parent_exercise_id": "3738",
+                "course_id": "153",
+                "name": "Project prereuisite",
+                "slug": "js-if-else__Project1/How-to-generate-random-numbers",
+                "sequence_num": 601,
+                "review_type": "manual",
+                "submission_type": null,
+                "github_link": "https://github.com/navgurukul/newton/tree/master/js-if-else/Project1/How-to-generate-random-numbers.md",
+                "solution": null,
+                "content": [
+                    {
+                        "type": "markdown",
+                        "value": "# Generate Random Numbers\n\n\n\nFollow the link below to understand how to get random numbers. \n\n\n\n[click here\n](https://www.w3schools.com/jsref/jsref_random.asp)\n"
+                    }
+                ]
+            },
+            {
+                "id": "3744",
+                "parent_exercise_id": "3738",
+                "course_id": "153",
+                "name": "Rock Paper Scissors",
+                "slug": "js-if-else__Project1/Project",
+                "sequence_num": 602,
+                "review_type": "manual",
+                "submission_type": null,
+                "github_link": "https://github.com/navgurukul/newton/tree/master/js-if-else/Project1/Project.md",
+                "solution": null,
+                "content": [
+                    {
+                        "type": "markdown",
+                        "value": "# Project1\n\n\n\nHave you ever played a game called Rock Paper Scissors? We are going to create that game now.\n\n\n\nYou can see a video on how to play Rock paper scissors.\n\n\n\n"
+                    },
+                    {
+                        "type": "youtube",
+                        "value": "AnRYS02tvRA"
+                    },
+                    {
+                        "type": "markdown",
+                        "value": "Let’s play it online and see how it works :\n\n\n\n[Play Online Game\n](https://www.crazygames.com/game/rock-paper-scissors)\n\n \n"
+                    },
+                    {
+                        "type": "javascript",
+                        "value": {
+                            "code": "// please write code here",
+                            "testCases": []
+                        }
+                    },
+                    {
+                        "type": "solution",
+                        "value": {
+                            "code": "let readlineSync = require(\"readline-sync\");\n \nvar computerMoves = ['rock', 'paper', 'scissors'];\nvar randomMoveOfComputer = computerMoves[Math.floor(Math.random() * computerMoves.length)];\n \nvar playerName= readlineSync.question(\"What is your name: \")\nconsole.log(\"hi \"+ playerName )\nconsole.log(\"choose any move in rock paper scissors\")\nvar playerMove = readlineSync.question(\"Which move you want to do? \");\n \nif (playerMove == randomMoveOfComputer){\n   console.log(\"Match Draw\");\n}\nelse if(playerMove ==\"rock\" && randomMoveOfComputer == \"paper\"){\n   console.log(\"computer won the match\");\n}\nelse if(playerMove==\"rock\" && randomMoveOfComputer == \"scissors\"){\n   console.log(playerName+\" Won the match\");\n}\nelse if(playerMove==\"scissors\" && randomMoveOfComputer == \"rock\"){\n   console.log(\"computer won the match\");\n}\nelse if(playerMove==\"scissors\" && randomMoveOfComputer == \"paper\"){\n   console.log(playerName+\" Won the match\");\n}\nelse if(playerMove==\"paper\" && randomMoveOfComputer == \"rock\"){\n   console.log(playerName+\" Won the match\");\n}\nelse if(playerMove==\"paper\" && randomMoveOfComputer == \"scissors\"){\n   console.log(\"computer won the match\");\n}",
+                            "testCases": []
+                        }
+                    },
+                    {
+                        "type": "markdown",
+                        "value": "**For the next course [clickHere](https://www.merakilearn.org/course/137/exercise/3536)**\n"
+                    }
+                ]
+            }
+        ]
+    }
+}
